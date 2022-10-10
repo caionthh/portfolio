@@ -6,6 +6,7 @@ interface LabelProps {
   label?: string;
   size?: Size;
   font?: string;
+  color?: string;
   style?: {};
 }
 

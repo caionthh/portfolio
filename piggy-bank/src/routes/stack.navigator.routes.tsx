@@ -7,7 +7,7 @@ export type NativeStackParamList = {
   Home: undefined;
 }
 
-const defaultRoute = "Storybook";
+const defaultRoute = "Home";
 
 const options: NativeStackNavigationOptions = {
   headerShown: false,

@@ -8,7 +8,6 @@ export const Container = styled.View<ContainerProps>`
   background-color: ${props => props.backgroundColor || "#EF767A"};
   border-radius: 8px;
   padding: 10px 16px;
-  width: 80%;
 `;
 
 export const HeaderContainer = styled.View`
