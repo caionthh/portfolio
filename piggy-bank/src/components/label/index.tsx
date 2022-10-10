@@ -5,12 +5,14 @@ import { LabelText } from "./style";
 interface LabelProps {
   label?: string;
   size?: Size;
+  font?: string;
+  style?: {};
 }
 
 
-export const Label = ({ label, ...rest }: LabelProps) => {
+export const Label = ({ label, style, ...rest }: LabelProps) => {
 
   return (
-    <LabelText {...rest}>{label}</LabelText>
+    <LabelText style={[style]} {...rest}>{label}</LabelText>
   )
 }

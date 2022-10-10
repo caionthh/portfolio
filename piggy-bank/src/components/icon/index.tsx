@@ -3,12 +3,14 @@ import { Container, ImageContainer } from "./style";
 
 interface IconProps {
   src?: string;
+  width?: number;
+  height?: number;
 }
 
-export const Icon = ({ src }: IconProps) => {
+export const Icon = ({ src, width, height }: IconProps) => {
 
   return (
-    <Container>
+    <Container width={width} height={height}>
       {src && <ImageContainer source={{ uri: src }} resizeMode="contain" />}
     </Container>
   )
