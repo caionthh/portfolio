@@ -1,4 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { profileSlice } from "./profile";
+import { utilsSlice } from "./utils";
 
 interface Listing {
   value: number;
@@ -18,9 +20,11 @@ const listingSlice = createSlice({
 
 // export const
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    listings: listingSlice.reducer
+    listings: listingSlice.reducer,
+    profile: profileSlice.reducer,
+    utils: utilsSlice.reducer
   }
 })
 

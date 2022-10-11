@@ -26,6 +26,8 @@ import {
 import { ThemeProvider } from 'styled-components/native';
 import LightTheme from "./src/global/light.theme";
 import { Routes } from './src/routes/tabs.navigator.routes';
+import { Provider } from 'react-redux';
+import { store } from "./src/redux/store";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -76,11 +78,13 @@ export default function App() {
 
   return (
     <View style={{ flex: 1 }}>
-      <ThemeProvider theme={activeTheme}>
-        <NavigationContainer>
-          <Routes />
-        </NavigationContainer>
-      </ThemeProvider>
+      <Provider store={store}>
+        <ThemeProvider theme={activeTheme}>
+          <NavigationContainer>
+            <Routes />
+          </NavigationContainer>
+        </ThemeProvider>
+      </Provider>
     </View>
   );
 }
