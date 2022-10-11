@@ -9,7 +9,12 @@ const theme = {
     surface_detail_highlight: "#49DCB1",
 
     text_on_background: "#2D2D2D",
-    text_on_surface: "#FFFFFF"
+    text_on_surface: "#FFFFFF",
+
+    card_surface_first: "#456990",
+    card_surface_second: "#49DCB1",
+    card_surface_third: "#FAC748",
+    card_surface_fourth: "#8390FA",
   },
   fonts: {
     regular: "Inter_400Regular",

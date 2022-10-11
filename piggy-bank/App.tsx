@@ -2,7 +2,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import React, { useCallback, useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Routes } from './src/routes/stack.navigator.routes';
 import * as  SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import {
@@ -26,6 +25,7 @@ import {
 } from "@expo-google-fonts/inter";
 import { ThemeProvider } from 'styled-components/native';
 import LightTheme from "./src/global/light.theme";
+import { Routes } from './src/routes/tabs.navigator.routes';
 
 SplashScreen.preventAutoHideAsync();
 

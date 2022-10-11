@@ -6,3 +6,4 @@ import "../../src/components/icon/icon.stories";
 import "../../src/compositions/asset-card/asset-card.stories";
 import "../../src/compositions/asset-card-list/asset-card-list.stories";
 import "../../src/compositions/profile-header/profile-header.stories";
+import "../../src/compositions/card-scroller/card-scroller.stories";

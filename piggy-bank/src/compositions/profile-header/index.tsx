@@ -16,7 +16,7 @@ export const ProfileHeader = () => {
       </NameContainer>
       <Button icon={<EyeSVG width={24} height={24} />} />
       <Button icon={<NotificationSVG width={24} height={24} />} />
-      <Icon width={48} height={48} />
+      <Icon width={48} height={48} src="https://www.github.com/caionthh.png" />
     </Container>
   )
 }

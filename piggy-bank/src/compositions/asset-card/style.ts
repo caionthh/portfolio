@@ -5,6 +5,7 @@ export const Container = styled.View`
   flex-direction: row;
   width: 100%;
   padding: 0px 20px;
+  margin: 5px 0px;
 `;
 
 export const AssetContainer = styled.View`
